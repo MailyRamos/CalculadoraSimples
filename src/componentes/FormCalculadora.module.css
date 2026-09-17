@@ -1,0 +1,108 @@
+/* Container principal do formulário */
+.formContainer {
+    max-width: 380px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    font-family: Arial, sans-serif;
+}
+
+/* Título */
+.formContainer h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin: 0 0 0.5rem 0;
+}
+
+/* Estilização dos campos de input e select */
+.campo input,
+.campo select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    color: #222222; /* Define a cor do texto digitado como escuro */
+    background-color: #ffffff; /* Garante fundo branco no campo */
+}
+
+.campo input:focus,
+.campo select:focus {
+    border-color: #007bff;
+    background-color: #ffffff;
+}
+
+/* Ajuste específico para o menu seletor de operações */
+.campo select {
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Container dos botões */
+.btn {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Estilo geral dos botões */
+.btn input {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn input:active {
+    transform: scale(0.98);
+}
+
+/* Botão Calcular */
+.btn input[type="submit"] {
+    background-color: #a606f0;
+    color: #ffffff;
+}
+
+.btn input[type="submit"]:hover {
+    background-color: #7303a7;
+}
+
+/* Botão Limpar */
+.btn input[type="button"] {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+.btn input[type="button"]:hover {
+    background-color: #5a6268;
+}
+
+/* Exibição do resultado */
+.resultado {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #a606f0;
+    text-align: center;
+}
+
+.resultado p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333333;
+}
